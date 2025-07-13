@@ -124,15 +124,15 @@ else()
     find_package(ZLIB REQUIRED)
     find_package(PNG REQUIRED)
 
-    find_package(TurboJPEG QUIET)
-    if(NOT TurboJPEG_FOUND)
-        pkg_check_modules(TurboJPEG REQUIRED libjpeg)
-    endif()
+    # find_package(TurboJPEG QUIET)
+    # if(NOT TurboJPEG_FOUND)
+    #     pkg_check_modules(TurboJPEG REQUIRED libjpeg)
+    # endif()
 
-    find_package(OggVorbis QUIET)
-    if(NOT OGGVORBIS_FOUND)
-        pkg_check_modules(OGGVORBIS REQUIRED vorbis vorbisenc vorbisfile)
-    endif()
+    # find_package(OggVorbis QUIET)
+    # if(NOT OGGVORBIS_FOUND)
+    #     pkg_check_modules(OGGVORBIS REQUIRED vorbis vorbisenc vorbisfile)
+    # endif()
 
     add_library(fmt.hdll SHARED
         fmt.c
@@ -148,24 +148,30 @@ set_as_hdll(fmt)
 target_include_directories(fmt.hdll
     PRIVATE
     ${ZLIB_INCLUDE_DIRS}
-    ${PNG_INCLUDE_DIRS}
-    ${TurboJPEG_INCLUDE_DIRS}
-    ${VORBIS_INCLUDE_DIR}
+    png_static
+    /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/include
+    /home/yohanip/Documents/c++/well-known/ogg-vorbis/package-export/include
     ${MINIMP3_INCLUDE_DIR}
     ${MIKKTSPACE_INCLUDE_DIR}
+)
+
+target_link_directories(fmt.hdll
+    PRIVATE
+    /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/lib64
+    /home/yohanip/Documents/c++/well-known/ogg-vorbis/package-export/lib
 )
 
 target_link_libraries(fmt.hdll
     libhl
     ${ZLIB_LIBRARIES}
-    ${PNG_LIBRARIES}
-    ${TurboJPEG_LIBRARIES}
-    ${OGGVORBIS_LIBRARIES}
+    png_static
+    jpeg turbojpeg
+    vorbis ogg vorbisenc vorbisfile
 )
 
 target_compile_definitions(fmt.hdll
     PRIVATE
-    ${PNG_DEFINITIONS}
+    png_static
 )
 
 install(

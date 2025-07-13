@@ -32,6 +32,9 @@ def cleaning():
                 os.remove(path)
             elif os.path.isdir(path):
                 shutil.rmtree(path)
+    
+    if os.path.isdir("package-export"):
+        shutil.rmtree("package-export")
 
 def configuring():
     print("----> configuring");
