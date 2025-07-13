@@ -122,7 +122,12 @@ if(WIN32)
     )
 else()
     find_package(ZLIB REQUIRED)
-    find_package(PNG REQUIRED)
+    
+    # libpng at master
+    add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/libpng mylibpng)
+
+    #ogg-vorbis at master
+    add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis myoggvorbis)
 
     # find_package(TurboJPEG QUIET)
     # if(NOT TurboJPEG_FOUND)
@@ -150,7 +155,7 @@ target_include_directories(fmt.hdll
     ${ZLIB_INCLUDE_DIRS}
     png_static
     /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/include
-    /home/yohanip/Documents/c++/well-known/ogg-vorbis/package-export/include
+    Vorbis::vorbis
     ${MINIMP3_INCLUDE_DIR}
     ${MIKKTSPACE_INCLUDE_DIR}
 )
@@ -158,7 +163,6 @@ target_include_directories(fmt.hdll
 target_link_directories(fmt.hdll
     PRIVATE
     /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/lib64
-    /home/yohanip/Documents/c++/well-known/ogg-vorbis/package-export/lib
 )
 
 target_link_libraries(fmt.hdll
@@ -166,7 +170,8 @@ target_link_libraries(fmt.hdll
     ${ZLIB_LIBRARIES}
     png_static
     jpeg turbojpeg
-    vorbis ogg vorbisenc vorbisfile
+    # vorbis ogg vorbisenc vorbisfile
+    Vorbis::vorbis Vorbis::vorbisenc Vorbis::vorbisfile
 )
 
 target_compile_definitions(fmt.hdll

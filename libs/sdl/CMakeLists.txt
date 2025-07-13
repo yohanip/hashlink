@@ -1,7 +1,8 @@
 if(WIN32)
     set(SDL2_PATH ${INCLUDES_BASE_DIR}/sdl)
 endif()
-find_package(SDL2 REQUIRED)
+
+# find_package(SDL2 REQUIRED)
 
 list(APPEND srcs sdl.c)
 
@@ -9,6 +10,8 @@ if(!ANDROID)
     list(APPEND srcs gl.c)
 endif(!ANDROID)
 
+# make sure SDL are at release-2.32.8
+add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/SDL mysdl)
 
 add_library(sdl.hdll SHARED
     ${srcs}

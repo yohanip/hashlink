@@ -70,7 +70,7 @@ def packaging():
         print("Exit code:", exit_code)
         exit(1)
 
-cleaning()
+# cleaning()
 configuring()
 building()
 packaging()
