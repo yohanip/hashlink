@@ -58,4 +58,6 @@ args.txt
 
 
 /cmake-build
-/android/cmake-build
+/android/build
+
+package-export

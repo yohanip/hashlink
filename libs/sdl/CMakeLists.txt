@@ -3,19 +3,25 @@ if(WIN32)
 endif()
 find_package(SDL2 REQUIRED)
 
+list(APPEND srcs sdl.c)
+
+if(!ANDROID)
+    list(APPEND srcs gl.c)
+endif(!ANDROID)
+
+
 add_library(sdl.hdll SHARED
-    sdl.c
-    gl.c
+    ${srcs}
 )
 set_as_hdll(sdl)
 target_include_directories(sdl.hdll
     PRIVATE
-    ${SDL2_INCLUDE_DIR}
+    SDL2::SDL2
     ${INCLUDES_BASE_DIR}/gl
 )
 target_link_libraries(sdl.hdll
     libhl
-    ${SDL2_LIBRARY}
+    SDL2::SDL2
 )
 
 if(WIN32)
@@ -25,7 +31,7 @@ if(WIN32)
     )
 endif()
 
-if(APPLE OR UNIX)
+if(APPLE OR LINUX)
     find_package(OpenGL REQUIRED)
     target_include_directories(sdl.hdll
         PRIVATE
