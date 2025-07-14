@@ -22,18 +22,8 @@ def run_command(command):
 
 def cleaning():
     print(f"----> cleaning build dir<{build_dir}>");
-    if not os.path.isdir(build_dir):
-        return
-    
-    for entry in os.listdir(build_dir):
-        if entry == "_deps":
-            continue
-        else:
-            path = os.path.join(build_dir, entry)
-            if os.path.isfile(path):
-                os.remove(path)
-            elif os.path.isdir(path):
-                shutil.rmtree(path)
+    if os.path.isdir(build_dir):
+        shutil.rmtree(build_dir)
     
     if os.path.isdir(package_dir):
         shutil.rmtree(package_dir)
@@ -46,9 +36,10 @@ def configuring():
             build_dir,
             "-G",
             "Ninja",
-            "-DCMAKE_CXX_COMPILER=clang++",
-            "-DCMAKE_C_COMPILER=clang",
+            # "-DCMAKE_CXX_COMPILER=clang++",
+            # "-DCMAKE_C_COMPILER=clang",
             "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+            "-DPNG_SHARED=OFF",
             "-DENABLE_PROGRAMS=OFF",
             "-DENABLE_TESTING=OFF",
             "-DINSTALL_DOCS=OFF",

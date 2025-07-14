@@ -48,12 +48,11 @@ def configuring():
             "-G",
             "Ninja",
             "-DANDROID_ABI=arm64-v8a",
+            "-DPNG_SHARED=OFF",
             "-DENABLE_PROGRAMS=OFF",
             "-DENABLE_TESTING=OFF",
             "-DINSTALL_DOCS=OFF",
-            "-DPNG_EXECUTABLES=OFF",
             "-DPNG_TESTS=OFF",
-            "-DPNG_TOOLS=OFF",
             "-DPNG_TOOLS=OFF",
             f"-DCMAKE_INSTALL_PREFIX={package_dir}",
             f"-DANDROID_PLATFORM=android-21",
@@ -81,7 +80,7 @@ def packaging():
         print("Exit code:", exit_code)
         exit(1)
 
-# cleaning()
+cleaning()
 configuring()
 building()
 packaging()

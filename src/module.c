@@ -31,6 +31,8 @@ EXTERN_C IMAGE_DOS_HEADER __ImageBase;
 #	include <dlfcn.h>
 #endif
 
+#include <stdio.h>
+
 #define HOT_RELOAD_EXTRA_GLOBALS	4096
 
 HL_API void hl_prim_not_loaded( const uchar *err );
@@ -369,8 +371,10 @@ static void *resolve_library( const char *lib, bool is_opt ) {
 
 	strcpy(tmp+strlen(lib),".hdll");
 	h = dlopen(tmp,RTLD_LAZY);
-	if( h == NULL && !is_opt )
+	if( h == NULL && !is_opt ) {
+		fprintf(stderr, "dlopen error: %s\n", dlerror());
 		hl_fatal1("Failed to load library %s",tmp);
+	}
 	return h;
 }
 
