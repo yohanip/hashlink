@@ -7,12 +7,7 @@ set(HL_VERSION ${HL_VERSION_MAJOR}.${HL_VERSION_MINOR}.${HL_VERSION_PATCH})
 
 cmake_policy(SET CMP0042 NEW)
 
-if(WIN32)
-    set(CMAKE_SYSTEM_VERSION 10.0)
-    project(hashlink C CXX) # C++ required for directx
-else()
-    project(hashlink C)
-endif()
+project(hashlink C CXX)
 
 include(GNUInstallDirs)
 include(FindPkgConfig)

@@ -1,3 +1,30 @@
+# MODIFICATION
+
+1. Cloning repository needed, put them all in one directory, and then create environment variable `CXX_WELLKNOWN_ROOT` pointing to that directory
+	- PNG https://github.com/pnggroup/libpng @master
+	- OGG-VORBIS https://github.com/yohanip/android-compile-vorbis @master
+	- JpegTurbo https://github.com/libjpeg-turbo/libjpeg-turbo @master
+	- SDL https://github.com/libsdl-org/SDL @release-2.32.8
+
+2. libjpeg-turbo **needs to be compiled and exported** before compiling Hashlink because it could not be used as `subdir` project.
+use
+
+3. Progress:
+	- Compiled 100% for ubuntu
+	- Compiled for Android
+		- libhl.so
+		- hl
+		- fmt
+		- sdl
+		- ui
+		- ssl
+		- heaps
+
+4. to compile for Linux run `python run-desktop.py`
+
+5. to compile for Android, `cd` to `android` folder and then run `python run.py`
+
+
 <a href="https://hashlink.haxe.org"><img src="https://hashlink.haxe.org/hashlink.svg" alt="HashLink" align="right" /></a>
 
 # HashLink

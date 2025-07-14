@@ -2,14 +2,13 @@ import subprocess
 import os
 import shutil
 
-build_dir = "build-android"
-package_dir = "build-export-android"
+build_dir = "build-linux"
+package_dir = "build-export-linux"
 
-ANDROID_NDK = os.environ["ANDROID_NDK"]
+if os.name == "nt":
+    build_dir = "build-window"
+    package_dir = "build-export-windows"
 
-if not ANDROID_NDK:
-    print("Please specify ANDROID_NDK env var")
-    exit(1)
 
 def run_command(command):
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
@@ -22,7 +21,7 @@ def run_command(command):
     return process.returncode
 
 def cleaning():
-    print("----> cleaning build dir");
+    print(f"----> cleaning build dir<{build_dir}>");
     if not os.path.isdir(build_dir):
         return
     
@@ -36,8 +35,8 @@ def cleaning():
             elif os.path.isdir(path):
                 shutil.rmtree(path)
     
-    if os.path.isdir("package-export"):
-        shutil.rmtree("package-export")
+    if os.path.isdir(package_dir):
+        shutil.rmtree(package_dir)
 
 def configuring():
     print("----> configuring");
@@ -47,18 +46,15 @@ def configuring():
             build_dir,
             "-G",
             "Ninja",
-            "-DANDROID_ABI=arm64-v8a",
+            "-DCMAKE_CXX_COMPILER=clang++",
+            "-DCMAKE_C_COMPILER=clang",
+            "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
             "-DENABLE_PROGRAMS=OFF",
             "-DENABLE_TESTING=OFF",
             "-DINSTALL_DOCS=OFF",
-            "-DPNG_EXECUTABLES=OFF",
             "-DPNG_TESTS=OFF",
             "-DPNG_TOOLS=OFF",
-            "-DPNG_TOOLS=OFF",
-            f"-DCMAKE_INSTALL_PREFIX={package_dir}",
-            f"-DANDROID_PLATFORM=android-21",
-            f"-DANDROID_NDK={ANDROID_NDK}",
-            f"-DCMAKE_TOOLCHAIN_FILE={ANDROID_NDK}/build/cmake/android.toolchain.cmake"
+            f"-DCMAKE_INSTALL_PREFIX={package_dir}"
         ])
 
     if(exit_code != 0):
@@ -74,14 +70,14 @@ def building():
         exit(1)
 
 def packaging():
-    print("----> packaging...");
-    exit_code = run_command(command = ["cmake", "--install", build_dir])
+    print("----> packaging...[libs and includes will be in the directory: package-export]");
+    exit_code = run_command(command = ["cmake", "--install", build_dir, "--prefix", package_dir])
 
     if(exit_code != 0):
         print("Exit code:", exit_code)
         exit(1)
 
-# cleaning()
+cleaning()
 configuring()
 building()
 packaging()

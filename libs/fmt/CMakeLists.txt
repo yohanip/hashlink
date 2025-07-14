@@ -129,16 +129,6 @@ else()
     #ogg-vorbis at master
     add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis myoggvorbis)
 
-    # find_package(TurboJPEG QUIET)
-    # if(NOT TurboJPEG_FOUND)
-    #     pkg_check_modules(TurboJPEG REQUIRED libjpeg)
-    # endif()
-
-    # find_package(OggVorbis QUIET)
-    # if(NOT OGGVORBIS_FOUND)
-    #     pkg_check_modules(OGGVORBIS REQUIRED vorbis vorbisenc vorbisfile)
-    # endif()
-
     add_library(fmt.hdll SHARED
         fmt.c
         sha1.c
@@ -150,11 +140,24 @@ endif()
 
 set_as_hdll(fmt)
 
+if(ANDROID)
+    set(target_desktop android)
+elseif(LINUX)
+    set(target_desktop linux)
+elseif(WIN32)
+    set(target_desktop window)
+else()
+    message(FATAL_ERROR "only supporting android, linux, and windows.. i dont own mac")
+endif()
+
+set(include_jpeg_turbo "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/build-export-${target_desktop}/include")
+set(link_dir_jpeg_turbo "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/build-export-${target_desktop}/lib")
+
 target_include_directories(fmt.hdll
     PRIVATE
     ${ZLIB_INCLUDE_DIRS}
     png_static
-    /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/include
+    ${include_jpeg_turbo}
     Vorbis::vorbis
     ${MINIMP3_INCLUDE_DIR}
     ${MIKKTSPACE_INCLUDE_DIR}
@@ -162,7 +165,7 @@ target_include_directories(fmt.hdll
 
 target_link_directories(fmt.hdll
     PRIVATE
-    /home/yohanip/Documents/c++/well-known/libjpeg-turbo/package-export/lib64
+    ${link_dir_jpeg_turbo}
 )
 
 target_link_libraries(fmt.hdll

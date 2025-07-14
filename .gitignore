@@ -57,7 +57,4 @@ args.txt
 /other/benchs/hlc
 
 
-/cmake-build
-/android/build
-
-package-export
+build*/
