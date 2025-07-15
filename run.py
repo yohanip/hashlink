@@ -244,7 +244,7 @@ def do_build_known(target_platform='', no_clean=False, specific='', skip_confirm
             if not no_clean:
                 cleaning(build_prefix)
 
-            r = configuring(target_platform, conf[2])
+            r = configuring(dir, target_platform, conf[2])
             if not r:
                 exit(1)
 
@@ -261,11 +261,11 @@ def do_build_known(target_platform='', no_clean=False, specific='', skip_confirm
     finally:
         os.chdir(old_cwd)
 
-def main_build(target_platform, clean):
-    if clean:
+def main_build(target_platform, no_clean):
+    if not no_clean:
         cleaning(build_prefix)
     
-    r = configuring(target_platform, [])
+    r = configuring("Hashlink", target_platform, [])
     if not r:
         exit(1)
 
@@ -298,12 +298,12 @@ def cleaning(build_dir):
     if os.path.isdir(build_dir):
         shutil.rmtree(build_dir)
 
-def configuring(target_platform='', extra_defines = []):
-    print("----> configuring");
+def configuring(project_name, target_platform='', extra_defines = []):
+    print(f"----> configuring <{project_name}>");
 
     cmd = [
         "cmake",
-        "--debug-find-pkg=SDL2",
+        # "--debug-find",
         "-B",
         build_prefix,
         "-G",

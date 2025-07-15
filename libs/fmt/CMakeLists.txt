@@ -123,18 +123,31 @@ if(WIN32)
 else()
     find_package(ZLIB REQUIRED)
     
-    list(APPEND 
-        CMAKE_PREFIX_PATH
-        "$ENV{CXX_WELLKNOWN_ROOT}/libpng/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
-    )
-
+    if(ANDROID)       
+        list(APPEND 
+            CMAKE_FIND_ROOT_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/libpng/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    else()
+        list(APPEND 
+            CMAKE_PREFIX_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/libpng/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    endif()
+    
     find_package(PNG REQUIRED)
 
-    #ogg-vorbis at master
-    list(APPEND 
-        CMAKE_PREFIX_PATH
-        "$ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
-    )
+    if(ANDROID)       
+        list(APPEND 
+            CMAKE_FIND_ROOT_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    else()
+        list(APPEND 
+            CMAKE_PREFIX_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    endif()
 
     find_package(Vorbis REQUIRED)
 
@@ -149,27 +162,24 @@ endif()
 
 set_as_hdll(fmt)
 
-if(ANDROID)
-    set(target_desktop android)
-elseif(LINUX)
-    set(target_desktop linux)
-elseif(WIN32)
-    set(target_desktop window)
+if(ANDROID)       
+    list(APPEND 
+        CMAKE_FIND_ROOT_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
 else()
-    message(FATAL_ERROR "only supporting android, linux, and windows.. i dont own mac")
+    list(APPEND 
+        CMAKE_PREFIX_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
 endif()
-
-list(APPEND 
-    CMAKE_PREFIX_PATH
-    "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
-)
 
 find_package(libjpeg-turbo REQUIRED)
 
 target_include_directories(fmt.hdll
     PRIVATE
     ${ZLIB_INCLUDE_DIRS}
-    png_static
+    PNG::PNG
     libjpeg-turbo::turbojpeg-static
     Vorbis::vorbis
     ${MINIMP3_INCLUDE_DIR}
@@ -184,7 +194,7 @@ target_link_directories(fmt.hdll
 target_link_libraries(fmt.hdll
     libhl
     ${ZLIB_LIBRARIES}
-    png
+    PNG::PNG
     libjpeg-turbo::turbojpeg-static
     Vorbis::vorbis Vorbis::vorbisenc
     Vorbis::vorbisfile
@@ -192,7 +202,7 @@ target_link_libraries(fmt.hdll
 
 target_compile_definitions(fmt.hdll
     PRIVATE
-    png_static
+    PNG::PNG
 )
 
 install(
