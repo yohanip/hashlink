@@ -2,16 +2,18 @@ if(WIN32)
     set(SDL2_PATH ${INCLUDES_BASE_DIR}/sdl)
 endif()
 
-# find_package(SDL2 REQUIRED)
-
 if(ANDROID)
     list(APPEND srcs sdl.c)
 else()
     list(APPEND srcs sdl.c gl.c)
 endif(ANDROID)
 
-# make sure SDL are at release-2.32.8
-add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/SDL mysdl)
+list(APPEND 
+    CMAKE_PREFIX_PATH
+    "$ENV{CXX_WELLKNOWN_ROOT}/SDL/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+)
+
+find_package(SDL2 REQUIRED)
 
 add_library(sdl.hdll SHARED
     ${srcs}

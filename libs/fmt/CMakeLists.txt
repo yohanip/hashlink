@@ -123,11 +123,20 @@ if(WIN32)
 else()
     find_package(ZLIB REQUIRED)
     
-    # libpng at master
-    add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/libpng mylibpng)
+    list(APPEND 
+        CMAKE_PREFIX_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/libpng/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
+
+    find_package(PNG REQUIRED)
 
     #ogg-vorbis at master
-    add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis myoggvorbis)
+    list(APPEND 
+        CMAKE_PREFIX_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/ogg-vorbis/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
+
+    find_package(Vorbis REQUIRED)
 
     add_library(fmt.hdll SHARED
         fmt.c
@@ -150,14 +159,18 @@ else()
     message(FATAL_ERROR "only supporting android, linux, and windows.. i dont own mac")
 endif()
 
-set(include_jpeg_turbo "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/build-export-${target_desktop}/include")
-set(link_dir_jpeg_turbo "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/build-export-${target_desktop}/lib")
+list(APPEND 
+    CMAKE_PREFIX_PATH
+    "$ENV{CXX_WELLKNOWN_ROOT}/libjpeg-turbo/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+)
+
+find_package(libjpeg-turbo REQUIRED)
 
 target_include_directories(fmt.hdll
     PRIVATE
     ${ZLIB_INCLUDE_DIRS}
     png_static
-    ${include_jpeg_turbo}
+    libjpeg-turbo::turbojpeg-static
     Vorbis::vorbis
     ${MINIMP3_INCLUDE_DIR}
     ${MIKKTSPACE_INCLUDE_DIR}
@@ -165,16 +178,16 @@ target_include_directories(fmt.hdll
 
 target_link_directories(fmt.hdll
     PRIVATE
-    ${link_dir_jpeg_turbo}
+    libjpeg-turbo::turbojpeg-static
 )
 
 target_link_libraries(fmt.hdll
     libhl
     ${ZLIB_LIBRARIES}
-    png_static
-    jpeg turbojpeg
-    # vorbis ogg vorbisenc vorbisfile
-    Vorbis::vorbis Vorbis::vorbisenc Vorbis::vorbisfile
+    png
+    libjpeg-turbo::turbojpeg-static
+    Vorbis::vorbis Vorbis::vorbisenc
+    Vorbis::vorbisfile
 )
 
 target_compile_definitions(fmt.hdll

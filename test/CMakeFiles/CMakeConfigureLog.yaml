@@ -1,0 +1,1309 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Linux - 6.8.0-60-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a21a2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a21a2.dir/build.make CMakeFiles/cmTC_a21a2.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh'
+        Building C object CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -c /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a21a2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8dO5G4.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o /tmp/cc8dO5G4.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a21a2
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a21a2.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a21a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a21a2.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyyjLLD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a21a2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyyjLLD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a21a2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a21a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a21a2.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -o cmTC_a21a2
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a21a2/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a21a2.dir/build.make CMakeFiles/cmTC_a21a2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-XrDNUh']
+        ignore line: [Building C object CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -c /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a21a2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8dO5G4.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o /tmp/cc8dO5G4.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a21a2]
+        ignore line: [/home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a21a2.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a21a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a21a2.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyyjLLD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a21a2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyyjLLD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a21a2] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyyjLLD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a21a2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a21a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3723e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3723e.dir/build.make CMakeFiles/cmTC_3723e.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48'
+        Building CXX object CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -c /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3723e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccLVVYWu.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLVVYWu.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_3723e
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3723e.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3723e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3723e.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnfqg19.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3723e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnfqg19.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3723e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3723e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3723e.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3723e
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3723e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3723e.dir/build.make CMakeFiles/cmTC_3723e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-G6iC48']
+        ignore line: [Building CXX object CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -c /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3723e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccLVVYWu.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLVVYWu.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_3723e]
+        ignore line: [/home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3723e.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3723e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3723e.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnfqg19.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3723e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnfqg19.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3723e] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnfqg19.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3723e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_3723e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:190 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11b00/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_11b00.dir/build.make CMakeFiles/cmTC_11b00.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i'
+        Building C object CMakeFiles/cmTC_11b00.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -o CMakeFiles/cmTC_11b00.dir/src.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i/src.c
+        Linking C executable cmTC_11b00
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b00.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_11b00.dir/src.c.o -o cmTC_11b00
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-vXt73i'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/yohanip/Documents/c++/well-known/libpng/CMakeLists.txt:28 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+      Copyright (C) 2021 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/home/yohanip/Documents/c++/well-known/libpng/CMakeLists.txt:147 (check_library_exists)"
+    checks:
+      - "Looking for pow in m"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "PNG_HAVE_LIBM_POW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_697ab/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_697ab.dir/build.make CMakeFiles/cmTC_697ab.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V'
+        Building C object CMakeFiles/cmTC_697ab.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow -std=gnu11 -o CMakeFiles/cmTC_697ab.dir/CheckFunctionExists.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘pow’; expected ‘double(double,  double)’ [-Wbuiltin-declaration-mismatch]
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V/CheckFunctionExists.c:1:1: note: ‘pow’ is declared in header ‘<math.h>’
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_697ab
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697ab.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pow CMakeFiles/cmTC_697ab.dir/CheckFunctionExists.c.o -o cmTC_697ab  -lm
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-rxmC3V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/yohanip/Documents/c++/well-known/libpng/CMakeLists.txt:411 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LD_VERSION_SCRIPT"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "HAVE_LD_VERSION_SCRIPT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b797/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5b797.dir/build.make CMakeFiles/cmTC_5b797.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv'
+        Building C object CMakeFiles/cmTC_5b797.dir/src.c.o
+        /usr/bin/cc -DHAVE_LD_VERSION_SCRIPT  -fPIC -std=gnu11 -o CMakeFiles/cmTC_5b797.dir/src.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv/src.c
+        Linking C executable cmTC_5b797
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b797.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC CMakeFiles/cmTC_5b797.dir/src.c.o -o cmTC_5b797
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-aiRKZv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:53 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "INCLUDE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_833a1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_833a1.dir/build.make CMakeFiles/cmTC_833a1.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM'
+        Building C object CMakeFiles/cmTC_833a1.dir/INCLUDE_INTTYPES_H.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_833a1.dir/INCLUDE_INTTYPES_H.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM/INCLUDE_INTTYPES_H.c
+        Linking C executable cmTC_833a1
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_833a1.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_833a1.dir/INCLUDE_INTTYPES_H.c.o -o cmTC_833a1
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-JUfhcM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:54 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "INCLUDE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52b49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_52b49.dir/build.make CMakeFiles/cmTC_52b49.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p'
+        Building C object CMakeFiles/cmTC_52b49.dir/INCLUDE_STDINT_H.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_52b49.dir/INCLUDE_STDINT_H.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p/INCLUDE_STDINT_H.c
+        Linking C executable cmTC_52b49
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52b49.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_52b49.dir/INCLUDE_STDINT_H.c.o -o cmTC_52b49
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Npc03p'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:55 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake"
+    buildResult:
+      variable: "INCLUDE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4317/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e4317.dir/build.make CMakeFiles/cmTC_e4317.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0'
+        Building C object CMakeFiles/cmTC_e4317.dir/INCLUDE_SYS_TYPES_H.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_e4317.dir/INCLUDE_SYS_TYPES_H.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0/INCLUDE_SYS_TYPES_H.c
+        Linking C executable cmTC_e4317
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4317.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e4317.dir/INCLUDE_SYS_TYPES_H.c.o -o cmTC_e4317
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-IeoVw0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32235/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32235.dir/build.make CMakeFiles/cmTC_32235.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL'
+        Building C object CMakeFiles/cmTC_32235.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_32235.dir/CheckIncludeFile.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL/CheckIncludeFile.c
+        Linking C executable cmTC_32235
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32235.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_32235.dir/CheckIncludeFile.c.o -o cmTC_32235
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-ml0HfL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f95b9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f95b9.dir/build.make CMakeFiles/cmTC_f95b9.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5'
+        Building C object CMakeFiles/cmTC_f95b9.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_f95b9.dir/CheckIncludeFile.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5/CheckIncludeFile.c
+        Linking C executable cmTC_f95b9
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f95b9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f95b9.dir/CheckIncludeFile.c.o -o cmTC_f95b9
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-l2b0l5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bafa7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bafa7.dir/build.make CMakeFiles/cmTC_bafa7.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH'
+        Building C object CMakeFiles/cmTC_bafa7.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_bafa7.dir/CheckIncludeFile.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH/CheckIncludeFile.c
+        Linking C executable cmTC_bafa7
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bafa7.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_bafa7.dir/CheckIncludeFile.c.o -o cmTC_bafa7
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-BEt9TH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of int16_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c55bd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c55bd.dir/build.make CMakeFiles/cmTC_c55bd.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y'
+        Building C object CMakeFiles/cmTC_c55bd.dir/INT16_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_c55bd.dir/INT16_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y/INT16_SIZE.c
+        Linking C executable cmTC_c55bd
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c55bd.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c55bd.dir/INT16_SIZE.c.o -o cmTC_c55bd
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Q4uD5Y'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:4 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of uint16_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_UINT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_63280/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_63280.dir/build.make CMakeFiles/cmTC_63280.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ'
+        Building C object CMakeFiles/cmTC_63280.dir/UINT16_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_63280.dir/UINT16_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ/UINT16_SIZE.c
+        Linking C executable cmTC_63280
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63280.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_63280.dir/UINT16_SIZE.c.o -o cmTC_63280
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-E0SZbZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:5 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of u_int16_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_U_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2ce77/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2ce77.dir/build.make CMakeFiles/cmTC_2ce77.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn'
+        Building C object CMakeFiles/cmTC_2ce77.dir/U_INT16_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_2ce77.dir/U_INT16_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn/U_INT16_SIZE.c
+        Linking C executable cmTC_2ce77
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ce77.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_2ce77.dir/U_INT16_SIZE.c.o -o cmTC_2ce77
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-QUKbzn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:6 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aec2a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aec2a.dir/build.make CMakeFiles/cmTC_aec2a.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ'
+        Building C object CMakeFiles/cmTC_aec2a.dir/INT32_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_aec2a.dir/INT32_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ/INT32_SIZE.c
+        Linking C executable cmTC_aec2a
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aec2a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_aec2a.dir/INT32_SIZE.c.o -o cmTC_aec2a
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-CbJMYQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:7 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of uint32_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_UINT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4087f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4087f.dir/build.make CMakeFiles/cmTC_4087f.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT'
+        Building C object CMakeFiles/cmTC_4087f.dir/UINT32_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_4087f.dir/UINT32_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT/UINT32_SIZE.c
+        Linking C executable cmTC_4087f
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4087f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4087f.dir/UINT32_SIZE.c.o -o cmTC_4087f
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-nygkNT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:8 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of u_int32_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_U_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6155d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6155d.dir/build.make CMakeFiles/cmTC_6155d.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b'
+        Building C object CMakeFiles/cmTC_6155d.dir/U_INT32_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_6155d.dir/U_INT32_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b/U_INT32_SIZE.c
+        Linking C executable cmTC_6155d
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6155d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6155d.dir/U_INT32_SIZE.c.o -o cmTC_6155d
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-q7Rz1b'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:9 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_INT64_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77424/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77424.dir/build.make CMakeFiles/cmTC_77424.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x'
+        Building C object CMakeFiles/cmTC_77424.dir/INT64_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_77424.dir/INT64_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x/INT64_SIZE.c
+        Linking C executable cmTC_77424
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77424.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_77424.dir/INT64_SIZE.c.o -o cmTC_77424
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-4FKh3x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:10 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_SHORT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e06a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e06a9.dir/build.make CMakeFiles/cmTC_e06a9.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd'
+        Building C object CMakeFiles/cmTC_e06a9.dir/SHORT_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_e06a9.dir/SHORT_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd/SHORT_SIZE.c
+        Linking C executable cmTC_e06a9
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e06a9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e06a9.dir/SHORT_SIZE.c.o -o cmTC_e06a9
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ct7obd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:11 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_INT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07ee6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07ee6.dir/build.make CMakeFiles/cmTC_07ee6.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH'
+        Building C object CMakeFiles/cmTC_07ee6.dir/INT_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_07ee6.dir/INT_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH/INT_SIZE.c
+        Linking C executable cmTC_07ee6
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07ee6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_07ee6.dir/INT_SIZE.c.o -o cmTC_07ee6
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HdVXfH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:12 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85b77/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_85b77.dir/build.make CMakeFiles/cmTC_85b77.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD'
+        Building C object CMakeFiles/cmTC_85b77.dir/LONG_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_85b77.dir/LONG_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD/LONG_SIZE.c
+        Linking C executable cmTC_85b77
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85b77.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_85b77.dir/LONG_SIZE.c.o -o cmTC_85b77
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-GGF5PD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake/CheckSizes.cmake:13 (check_type_size)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/CMakeLists.txt:65 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/ogg/cmake"
+    buildResult:
+      variable: "HAVE_LONG_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc861/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc861.dir/build.make CMakeFiles/cmTC_cc861.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W'
+        Building C object CMakeFiles/cmTC_cc861.dir/LONG_LONG_SIZE.c.o
+        /usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_cc861.dir/LONG_LONG_SIZE.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W/LONG_LONG_SIZE.c
+        Linking C executable cmTC_cc861
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc861.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_cc861.dir/LONG_LONG_SIZE.c.o -o cmTC_cc861
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-Ko5K1W'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/yohanip/cmake-3.31.6-linux-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/home/yohanip/Documents/c++/well-known/ogg-vorbis/vorbis/CMakeLists.txt:63 (check_library_exists)"
+    checks:
+      - "Looking for floor in m"
+    directories:
+      source: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT"
+      binary: "/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/yohanip/haxe/hashlink/other/cmake;/home/yohanip/Documents/c++/well-known/ogg-vorbis/vorbis/cmake"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT'
+        
+        Run Build Command(s): /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7595e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7595e.dir/build.make CMakeFiles/cmTC_7595e.dir/build
+        gmake[1]: Entering directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT'
+        Building C object CMakeFiles/cmTC_7595e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor -std=gnu11 -o CMakeFiles/cmTC_7595e.dir/CheckFunctionExists.c.o -c /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘floor’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT/CheckFunctionExists.c:1:1: note: ‘floor’ is declared in header ‘<math.h>’
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_7595e
+        /home/yohanip/cmake-3.31.6-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7595e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=floor CMakeFiles/cmTC_7595e.dir/CheckFunctionExists.c.o -o cmTC_7595e  -lm
+        gmake[1]: Leaving directory '/home/yohanip/haxe/hashlink/test/CMakeFiles/CMakeScratch/TryCompile-HgNYeT'
+        
+      exitCode: 0
+...

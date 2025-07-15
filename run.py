@@ -278,8 +278,13 @@ def main_build(target_platform, clean):
         exit(1)
 
 
-def run_command(command):
-    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+def run_command(command, env: dict):
+    my_env = os.environ.copy()
+
+    for k,v in env.items():
+        my_env[k] = v
+
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=my_env)
 
     for line in process.stdout:
         print(line, end="")  # Already has newline
@@ -298,6 +303,7 @@ def configuring(target_platform='', extra_defines = []):
 
     cmd = [
         "cmake",
+        "--debug-find-pkg=SDL2",
         "-B",
         build_prefix,
         "-G",
@@ -319,19 +325,19 @@ def configuring(target_platform='', extra_defines = []):
         ])
 
 
-    exit_code = run_command(cmd)
+    exit_code = run_command(cmd, {"RUN_DOT_PY_BUILD_PREFIX": build_prefix})
 
     return True if exit_code == 0 else False;
 
 def building():
     print("----> building...");
-    exit_code = run_command(["cmake", "--build", build_prefix])
+    exit_code = run_command(["cmake", "--build", build_prefix], {"RUN_DOT_PY_BUILD_PREFIX": build_prefix})
 
     return True if exit_code == 0 else False;
 
 def packaging():
     print("----> packaging");
-    exit_code = run_command(["cmake", "--install", build_prefix])
+    exit_code = run_command(["cmake", "--install", build_prefix], {"RUN_DOT_PY_BUILD_PREFIX": build_prefix})
 
     return True if exit_code == 0 else False;
 

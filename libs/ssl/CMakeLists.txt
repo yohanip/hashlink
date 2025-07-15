@@ -119,9 +119,12 @@ if (WIN32)
         MBEDTLS_USER_CONFIG_FILE="mbedtls_user_config.h"
     )
 else()
-    # find_package(MbedTLS REQUIRED)
-    # make sure it is at 3.6.1
-    add_subdirectory($ENV{CXX_WELLKNOWN_ROOT}/mbedtls mymbedtls)
+    list(APPEND 
+        CMAKE_PREFIX_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/mbedtls/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
+
+    find_package(MbedTLS REQUIRED)
 
     add_library(ssl.hdll SHARED
         ssl.c
@@ -132,13 +135,11 @@ set_as_hdll(ssl)
 
 target_include_directories(ssl.hdll
     PRIVATE
-    # ${MBEDTLS_INCLUDE_DIRS}
     MbedTLS::mbedtls
 )
 
 target_link_libraries(ssl.hdll
     libhl
-    # ${MBEDTLS_LIBRARIES}
     MbedTLS::mbedtls
 )
 
