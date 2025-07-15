@@ -119,10 +119,17 @@ if (WIN32)
         MBEDTLS_USER_CONFIG_FILE="mbedtls_user_config.h"
     )
 else()
-    list(APPEND 
-        CMAKE_PREFIX_PATH
-        "$ENV{CXX_WELLKNOWN_ROOT}/mbedtls/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
-    )
+    if(ANDROID)       
+        list(APPEND 
+            CMAKE_FIND_ROOT_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/mbedtls/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    else()
+        list(APPEND 
+            CMAKE_PREFIX_PATH
+            "$ENV{CXX_WELLKNOWN_ROOT}/mbedtls/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+        )
+    endif()
 
     find_package(MbedTLS REQUIRED)
 

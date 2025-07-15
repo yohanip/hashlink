@@ -8,10 +8,17 @@ else()
     list(APPEND srcs sdl.c gl.c)
 endif(ANDROID)
 
-list(APPEND 
-    CMAKE_PREFIX_PATH
-    "$ENV{CXX_WELLKNOWN_ROOT}/SDL/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
-)
+if(ANDROID)       
+    list(APPEND 
+        CMAKE_FIND_ROOT_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/SDL/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
+else()
+    list(APPEND 
+        CMAKE_PREFIX_PATH
+        "$ENV{CXX_WELLKNOWN_ROOT}/SDL/$ENV{RUN_DOT_PY_BUILD_PREFIX}/install"
+    )
+endif()
 
 find_package(SDL2 REQUIRED)
 

@@ -264,8 +264,20 @@ def do_build_known(target_platform='', no_clean=False, specific='', skip_confirm
 def main_build(target_platform, no_clean):
     if not no_clean:
         cleaning(build_prefix)
-    
-    r = configuring("Hashlink", target_platform, [])
+
+    if target_platform == "android":
+        extra = [
+            "-DWITH_OPENAL=OFF",
+            "-DWITH_SQLITE=OFF",
+            "-DWITH_UV=OFF",
+            "-DWITH_VIDEO=OFF",
+        ]
+    else:
+        extra = []
+
+
+    r = configuring("Hashlink", target_platform, extra)
+
     if not r:
         exit(1)
 
