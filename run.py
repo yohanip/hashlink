@@ -271,6 +271,7 @@ def main_build(target_platform, no_clean):
             "-DWITH_SQLITE=OFF",
             "-DWITH_UV=OFF",
             "-DWITH_VIDEO=OFF",
+            "-DBUILD_TESTING=OFF",
         ]
     else:
         extra = []
