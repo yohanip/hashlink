@@ -19,9 +19,30 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
+// #include <execinfo.h>
 #include <hl.h>
+#include <stdio.h>
+
+// void bactraced() {
+// 	void *buffer[100];
+//     int nptrs = backtrace(buffer, 100);
+//     char **symbols = backtrace_symbols(buffer, nptrs);
+
+//     if (symbols == NULL) {
+//         perror("backtrace_symbols");
+//         exit(EXIT_FAILURE);
+//     }
+
+//     for (int i = 0; i < nptrs; i++) {
+//         printf("%s\n", symbols[i]);
+//     }
+
+//     free(symbols);
+// }
 
 HL_PRIM vbyte *hl_itos( int i, int *len ) {
+	// printf("converting %d\n", i);
+	// bactraced();
 	uchar tmp[24];
 	int k = (int)usprintf(tmp,24,USTR("%d"),i);
 	*len = k;

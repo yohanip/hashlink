@@ -134,6 +134,8 @@ add_library(libhl SHARED
     ${std_srcs}
 )
 
+# target_link_options(libhl PRIVATE -rdynamic)
+
 set(public_headers
     src/hl.h
     src/hlc.h

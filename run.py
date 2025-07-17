@@ -265,30 +265,21 @@ def main_build(target_platform, no_clean):
     if not no_clean:
         cleaning(build_prefix)
 
+    extra = []
+
     if target_platform == "android":
-        extra = [
+        extra.extend([
             "-DWITH_OPENAL=OFF",
             "-DWITH_SQLITE=OFF",
             "-DWITH_UV=OFF",
             "-DWITH_VIDEO=OFF",
             "-DBUILD_TESTING=OFF",
-        ]
-    else:
-        extra = []
+        ])
 
 
-    r = configuring("Hashlink", target_platform, extra)
-
-    if not r:
-        exit(1)
-
-    r = building()
-    if not r:
-        exit(1)
-
-    r = packaging()
-    if not r:
-        exit(1)
+    if not configuring("Hashlink", target_platform, extra): exit(1);
+    if not building(): exit(1)
+    if not packaging(): exit(1);
 
 
 def run_command(command, env: dict):
@@ -326,6 +317,7 @@ def configuring(project_name, target_platform='', extra_defines = []):
         "-DCMAKE_BUILD_TYPE=Release", # type release
         f"-DCMAKE_INSTALL_PREFIX={install_prefix}", # install path
         "-DCMAKE_POSITION_INDEPENDENT_CODE=ON", # all fPIC
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
     ]
 
     cmd.extend(extra_defines)
